@@ -3,7 +3,6 @@
 ![Java](https://img.shields.io/badge/Java-17%2B-blue)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
 ![Database](https://img.shields.io/badge/Database-SQL-lightgrey)
 ![License](https://img.shields.io/badge/License-Educational-yellow)
 
@@ -66,7 +65,7 @@ budgetIt/
 ### Backend Setup
 
 1. Clone the repository:
-   git clone https://github.com/your-username/budgetIt.git  
+   git clone https://github.com/Adamsonoladipupo/budgetIt  
    cd budgetIt  
 
 2. Configure MySQL in application.properties:
