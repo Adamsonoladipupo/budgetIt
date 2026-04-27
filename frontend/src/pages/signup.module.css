@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formBox {
+  width: 350px;
+}
+
+.formBox h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.frontendMessages {
+  background-color: red;
+}
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #107B50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #139662;
+}
+
+.forgot {
+  margin-top: 10px;
+  text-align: right;
+  color: #107B50;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.signupText {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signupText a {
+  color: #107B50;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  max-width: 400px;
+  color: #333;
+}
+
+.overlay h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.overlay span {
+  color: #107B50;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .right{
+    display: none;
+  }
+}
