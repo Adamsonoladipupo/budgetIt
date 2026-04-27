@@ -1,5 +1,12 @@
 # 💰 BudgetIt
 
+<p align="center">
+  <a href="https://budgetit-2p8g.onrender.com">
+    <img src="https://img.shields.io/badge/🚀%20Live%20App-Click%20to%20Open-107B50?style=for-the-badge" alt="Live App"/>
+  </a>
+</p>
+
+
 ![Java](https://img.shields.io/badge/Java-17%2B-blue)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB)
