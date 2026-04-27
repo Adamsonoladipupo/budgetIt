@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./modal.module.css";
 
 const AddOutflowModal = ({ isOpen, onClose, onSuccess }) => {
+  const BASE_URL = "https://budgetit-backend.onrender.com";
   const [form, setForm] = useState({
     name: "",
     amount: "",
@@ -21,7 +22,7 @@ const AddOutflowModal = ({ isOpen, onClose, onSuccess }) => {
     const email = localStorage.getItem("userEmail");
 
     try {
-      const response = await fetch("http://localhost:8080/api/finance/outflow", {
+      const response = await fetch(`${BASE_URL}/api/finance/outflow`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

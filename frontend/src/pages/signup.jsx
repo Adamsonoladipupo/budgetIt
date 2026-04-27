@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const SignUp = () => {
+    const BASE_URL = "https://budgetit-backend.onrender.com";
     const navigate = useNavigate();
 
     const [form, setForm] = useState({
@@ -31,7 +32,7 @@ const SignUp = () => {
         }
 
         try {
-            const response = await fetch("http://localhost:8080/api/users/register", {
+            const response = await fetch(`${BASE_URL}/api/users/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

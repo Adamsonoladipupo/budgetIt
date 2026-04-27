@@ -8,6 +8,7 @@ import AddOutflowModal from "../components/AddOutflowModal";
 import Logo from "../assets/logo.png"
 
 const Dashboard = () => {
+  const BASE_URL = "https://budgetit-backend.onrender.com";
   const [ dashboardData, setDashboardData] = useState(null);
   const [ loading , setLoading ] = useState(true);
   const [showInflowModal, setShowInflowModal] = useState(false);
@@ -21,7 +22,7 @@ const Dashboard = () => {
         return;
     }
 
-    fetch(`http://localhost:8080/api/finance/dashboard/full?email=${email}`)
+    fetch(`${BASE_URL}/api/finance/dashboard/full?email=${email}`)
     .then((response) => {
       if(!response.ok){
         throw new Error ("Failed to fetch user data")
@@ -49,7 +50,7 @@ const Dashboard = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/finance/inflow/${id}?email=${email}`,
+        `${BASE_URL}/api/finance/inflow/${id}?email=${email}`,
         { method: "DELETE" }
       );
 
@@ -72,7 +73,7 @@ const Dashboard = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/finance/outflow/${id}?email=${email}`,
+        `${BASE_URL}/api/finance/outflow/${id}?email=${email}`,
         { method: "DELETE" }
       );
 
@@ -93,7 +94,7 @@ const Dashboard = () => {
   const fetchDashboard = () => {
     const email = localStorage.getItem("userEmail");
 
-    fetch(`http://localhost:8080/api/finance/dashboard/full?email=${email}`)
+    fetch(`${BASE_URL}/api/finance/dashboard/full?email=${email}`)
       .then(res => res.json())
       .then(data => setDashboardData(data));
   };

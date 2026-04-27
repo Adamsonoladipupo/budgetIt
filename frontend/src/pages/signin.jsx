@@ -4,6 +4,7 @@ import { Link , useNavigate} from "react-router-dom"
 import { useState} from "react"
 
 const SignIn = () => {
+    const BASE_URL = "https://budgetit-backend.onrender.com";
     const navigate = useNavigate();
 
     const [form, setForm] = useState({
@@ -24,7 +25,7 @@ const SignIn = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://localhost:8080/api/users/login", {
+            const response = await fetch(`${BASE_URL}/api/users/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
