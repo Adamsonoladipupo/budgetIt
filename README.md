@@ -1,7 +1,7 @@
 # 💰 BudgetIt
 
 <p align="center">
-  <a href="https://budgetit-2p8g.onrender.com">
+  <a href="https://budgetit-2p8g.onrender.com" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20App-Click%20to%20Open-107B50?style=for-the-badge" alt="Live App"/>
   </a>
 </p>
